@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+.panePrincipal {
+    -fx-background-color: transparent;
+}
+
+.paneDivisor {
+    -fx-background-color: #166CA0;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.paneLogin {
+    -fx-background-color: #fff;
+}
+
+.paneAba {
+    -fx-background-color: #fff;
+}
+
+.paneCentral {
+    -fx-background-color: #fff;
+    -fx-border-radius: 5em;
+}
+
+.lblNome {
+    -fx-font-size: 50px;
+    -fx-font-family: 'Amatic SC', cursive;
+}
+
+.lblVersao {
+    -fx-font-size: 15px;
+}
+
+.lblDesenvolvedor {
+    -fx-font-size: 20px;
+    -fx-alignment: top-center;
+   -fx-font-family: 'Dancing Script', cursive;
+
+}
