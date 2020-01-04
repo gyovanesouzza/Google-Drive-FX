@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -15,14 +13,7 @@
             <children>
                 <AnchorPane fx:id="paneLogin" layoutX="372.0" prefHeight="514.0" prefWidth="428.0" styleClass="paneLogin">
                     <children>
-                        <JFXTextField fx:id="txtEmail" layoutX="106.0" layoutY="157.0" prefHeight="26.0" prefWidth="216.0" promptText="E-Mail" />
-                        <JFXPasswordField fx:id="txtSenha" layoutX="106.0" layoutY="231.0" prefHeight="26.0" prefWidth="216.0" promptText="Senha" />
-                        <JFXButton fx:id="btnLogin" layoutX="166.0" layoutY="308.0" onMouseClicked="#mouseClickedLogin">
-                            <graphic>
-                                <FontIcon iconLiteral="fas-angle-right" iconSize="40" selectionFill="#722323" wrappingWidth="36.0" />
-                            </graphic>
-                        </JFXButton>
-                        <JFXButton fx:id="btnLoginGoogle" buttonType="RAISED" layoutX="117.0" layoutY="393.0" prefHeight="49.0" prefWidth="194.0" text="Entrar com Google ">
+                        <JFXButton fx:id="btnLoginGoogle" layoutX="117.0" layoutY="208.0" prefHeight="49.0" prefWidth="194.0" ripplerFill="#f8f5f5" text="Entrar com Google ">
                             <graphic>
                                 <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                                     <image>

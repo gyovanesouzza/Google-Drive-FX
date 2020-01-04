@@ -53,18 +53,42 @@
         </dependency>
         <dependency>
 
-        <groupId>com.google.api-client</groupId>
-        <artifactId>google-api-client</artifactId>
-        <version>1.30.6</version>
-    </dependency>
-    <dependency>
-        <groupId>com.google.apis</groupId>
-        <artifactId>google-api-services-drive</artifactId>
-        <version>v3-rev188-1.25.0</version>
-    </dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.30.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-drive</artifactId>
+            <version>v3-rev188-1.25.0</version>
+        </dependency>
 
 
-</dependencies>
+        <dependency>
+            <groupId>com.google.auth</groupId>
+            <artifactId>google-auth-library-oauth2-http</artifactId>
+            <version>0.19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-bigquery</artifactId>
+            <version>1.85.0</version>
+        </dependency>
 
 
-        </project>
+            <dependency>
+                <groupId>io.github.typhon0</groupId>
+                <artifactId>AnimateFX</artifactId>
+                <version>1.2.0</version>
+            </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>snapshots</id>
+            <name>libs-snapshot</name>
+            <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
+        </repository>
+    </repositories>
+
+</project>

@@ -62,225 +62,6 @@
          <center>
             <AnchorPane fx:id="paneCentral" prefHeight="626.0" prefWidth="1052.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane fx:id="paneMeuDrive">
-                     <children>
-                         <BorderPane prefHeight="626.0" prefWidth="1052.0" style="-fx-background-color: #C7C7C7;">
-                             <top>
-                                 <Pane prefHeight="288.0" prefWidth="1086.0" BorderPane.alignment="CENTER">
-                                     <children>
-                                         <Label layoutX="21.0" layoutY="33.0" prefHeight="39.0" prefWidth="120.0" styleClass="lblMeuDrive" text="Meu Drive" />
-                                         <Label layoutX="21.0" layoutY="123.0" styleClass="lblAcessoRapido" text="ACESSO RAPIDO" />
-                                         <HBox layoutX="2.0" layoutY="141.0" prefHeight="148.0" prefWidth="1083.0" spacing="10.0" styleClass="menuAcessoRapido">
-                                             <padding>
-                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                             </padding>
-                                             <children>
-                                                 <Pane prefHeight="138.0" prefWidth="166.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;" />
-                                                 <Pane prefHeight="138.0" prefWidth="166.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;" />
-                                                 <Pane prefHeight="138.0" prefWidth="166.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;" />
-                                             </children>
-                                         </HBox>
-                                     </children>
-                                 </Pane>
-                             </top>
-                             <center>
-                                 <Pane prefHeight="368.0" prefWidth="1086.0" style="-fx-background-color: #C7C7C7;" BorderPane.alignment="CENTER">
-                                     <children>
-                                         <Label layoutX="24.0" layoutY="14.0" text="Todos os Arquivos" />
-                                         <ScrollPane layoutY="74.0">
-                                             <content>
-                                                 <VBox prefHeight="255.0" prefWidth="1048.0" spacing="10.0" style="-fx-background-color: #C7C7C7;">
-                                                     <children>
-                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
-                                                             <VBox.margin>
-                                                                 <Insets />
-                                                             </VBox.margin>
-                                                             <padding>
-                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                             </padding>
-                                                             <children>
-                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
-                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
-                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
-                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
-                                                             </children>
-                                                         </HBox>
-                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
-                                                             <padding>
-                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                             </padding>
-                                                             <children>
-                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
-                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
-                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
-                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
-                                                             </children>
-                                                         </HBox>
-                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
-                                                             <padding>
-                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                             </padding>
-                                                             <children>
-                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
-                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
-                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
-                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
-                                                             </children>
-                                                         </HBox>
-                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
-                                                             <padding>
-                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                             </padding>
-                                                             <children>
-                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
-                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
-                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
-                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
-                                                             </children>
-                                                         </HBox>
-                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
-                                                             <padding>
-                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                             </padding>
-                                                             <children>
-                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
-                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
-                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
-                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
-                                                             </children>
-                                                         </HBox>
-                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
-                                                             <padding>
-                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                             </padding>
-                                                             <children>
-                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
-                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
-                                                                     <font>
-                                                                         <Font size="16.0" />
-                                                                     </font>
-                                                                 </Label>
-                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
-                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
-                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
-                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
-                                                             </children>
-                                                         </HBox>
-                                                     </children>
-                                                     <padding>
-                                                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                                     </padding>
-                                                 </VBox>
-                                             </content>
-                                         </ScrollPane>
-                                     </children>
-                                 </Pane>
-                             </center>
-                         </BorderPane>
-                     </children>
-                  </AnchorPane>
                   <AnchorPane fx:id="paneCompComigo" prefHeight="626.0" prefWidth="1052.0" style="-fx-background-color: #7F7F7F;">
                      <children>
                         <BorderPane prefHeight="626.0" prefWidth="1052.0">
@@ -597,6 +378,225 @@
                               </Pane>
                            </center>
                         </BorderPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneMeuDrive">
+                     <children>
+                         <BorderPane prefHeight="626.0" prefWidth="1052.0" style="-fx-background-color: #C7C7C7;">
+                             <top>
+                                 <Pane prefHeight="288.0" prefWidth="1086.0" BorderPane.alignment="CENTER">
+                                     <children>
+                                         <Label layoutX="21.0" layoutY="33.0" prefHeight="39.0" prefWidth="120.0" styleClass="lblMeuDrive" text="Meu Drive" />
+                                         <Label layoutX="21.0" layoutY="123.0" styleClass="lblAcessoRapido" text="ACESSO RAPIDO" />
+                                         <HBox layoutX="2.0" layoutY="141.0" prefHeight="148.0" prefWidth="1083.0" spacing="10.0" styleClass="menuAcessoRapido">
+                                             <padding>
+                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                 <Pane prefHeight="138.0" prefWidth="166.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;" />
+                                                 <Pane prefHeight="138.0" prefWidth="166.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;" />
+                                                 <Pane prefHeight="138.0" prefWidth="166.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;" />
+                                             </children>
+                                         </HBox>
+                                     </children>
+                                 </Pane>
+                             </top>
+                             <center>
+                                 <Pane prefHeight="368.0" prefWidth="1086.0" style="-fx-background-color: #C7C7C7;" BorderPane.alignment="CENTER">
+                                     <children>
+                                         <Label layoutX="24.0" layoutY="14.0" text="Todos os Arquivos" />
+                                         <ScrollPane layoutY="74.0">
+                                             <content>
+                                                 <VBox prefHeight="255.0" prefWidth="1048.0" spacing="10.0" style="-fx-background-color: #C7C7C7;">
+                                                     <children>
+                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
+                                                             <VBox.margin>
+                                                                 <Insets />
+                                                             </VBox.margin>
+                                                             <padding>
+                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                             </padding>
+                                                             <children>
+                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
+                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
+                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
+                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
+                                                             </children>
+                                                         </HBox>
+                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
+                                                             <padding>
+                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                             </padding>
+                                                             <children>
+                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
+                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
+                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
+                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
+                                                             </children>
+                                                         </HBox>
+                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
+                                                             <padding>
+                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                             </padding>
+                                                             <children>
+                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
+                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
+                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
+                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
+                                                             </children>
+                                                         </HBox>
+                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
+                                                             <padding>
+                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                             </padding>
+                                                             <children>
+                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
+                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
+                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
+                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
+                                                             </children>
+                                                         </HBox>
+                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
+                                                             <padding>
+                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                             </padding>
+                                                             <children>
+                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
+                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
+                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
+                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
+                                                             </children>
+                                                         </HBox>
+                                                         <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1081.0" spacing="10.0">
+                                                             <padding>
+                                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                             </padding>
+                                                             <children>
+                                                                 <FontIcon iconLiteral="fas-file-word" iconSize="30" wrappingWidth="40.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="274.0" text="Apresentação do TCC Parte 1 ">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <JFXTogglePane prefHeight="30.0" prefWidth="85.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="230.0" text="Novembro 11 2019 7 P.M">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="62.0" prefWidth="42.0" />
+                                                                 <Label prefHeight="25.0" prefWidth="57.0" text="25 MB">
+                                                                     <font>
+                                                                         <Font size="16.0" />
+                                                                     </font>
+                                                                 </Label>
+                                                                 <Pane prefHeight="30.0" prefWidth="70.0" />
+                                                                 <FontIcon iconLiteral="fas-download" iconSize="30" />
+                                                                 <Pane prefHeight="30.0" prefWidth="60.0" />
+                                                                 <FontIcon iconLiteral="fas-ellipsis-h" iconSize="30" />
+                                                             </children>
+                                                         </HBox>
+                                                     </children>
+                                                     <padding>
+                                                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                     </padding>
+                                                 </VBox>
+                                             </content>
+                                         </ScrollPane>
+                                     </children>
+                                 </Pane>
+                             </center>
+                         </BorderPane>
                      </children>
                   </AnchorPane>
                </children>

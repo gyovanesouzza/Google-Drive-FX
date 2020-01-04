@@ -7,7 +7,7 @@
 <HBox prefHeight="32.0" prefWidth="88.0" stylesheets="@../../css/CSS_Auxiliares/abaFechaMinizar.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controller_auxiliares.AbaFechaeMinizarController">
 
     <children>
-        <JFXButton fx:id="btnMaximizar" onAction="#actionMinimizar" prefWidth="59.0" styleClass="btnMinimizar">
+        <JFXButton fx:id="btnMaximizar" onAction="#actionMinimizar" prefWidth="59.0" ripplerFill="WHITE" styleClass="btnMinimizar">
             <graphic>
                 <FontIcon iconLiteral="fas-minus" />
             </graphic>
