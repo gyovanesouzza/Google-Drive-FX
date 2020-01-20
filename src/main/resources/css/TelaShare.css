@@ -1,0 +1,25 @@
+.mainFxmlClass {
+    -fx-background-color: #F8F5F9;
+
+}
+
+.lblShare{
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-alignment: top-center;
+}
+.brdPane{
+    -fx-background-color: #F8F5F9;
+
+}
+.button1 {
+    -fx-background-color: #F8F5F9;
+}
+
+.button1:hover {
+    -fx-background-color: #e4eefd;
+}
+
+.button1:pressed {
+    -fx-background-color: #d3d9e2b0;
+}

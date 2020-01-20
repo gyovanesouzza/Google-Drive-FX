@@ -20,16 +20,20 @@
 
 .paneCentral {
     -fx-background-color: #fff;
-    -fx-border-radius: 5em;
+    -fx-background-radius: 50 50 10 10;
 }
 
 .lblNome {
     -fx-font-size: 50px;
     -fx-font-family: 'Amatic SC', cursive;
+    -fx-alignment: top-center
+
 }
 
 .lblVersao {
     -fx-font-size: 15px;
+    -fx-alignment: top-center
+
 }
 
 .lblDesenvolvedor {
@@ -38,3 +42,9 @@
    -fx-font-family: 'Dancing Script', cursive;
 
 }
+
+.jfx-button {
+    -jfx-button-type: RAISED;
+    -fx-background-color: #E5E5E5;
+    -fx-text-fill: black;
+}    

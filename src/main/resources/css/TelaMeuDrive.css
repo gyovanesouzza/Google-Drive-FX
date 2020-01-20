@@ -1,0 +1,120 @@
+
+
+
+.btnMeuDrive {
+    -fx-font-size: 20px;
+    -fx-background-color: #F8F5F9;
+}
+
+.btnMeuDrive:hover {
+    -fx-text-fill: #A7B3C4;
+}
+
+.btnMeuDrive:pressed {
+    -fx-text-fill: #80aff5;
+}
+
+.btnMeuDrive:active {
+    -fx-text-fill: #80aff5;
+}
+
+.button1 {
+    -fx-background-color: #F8F5F9;
+}
+
+.button1:hover {
+    -fx-background-color: #e4eefd;
+}
+
+.button1:pressed {
+    -fx-background-color: #d3d9e2b0;
+}
+
+.lblAcessoRapido {
+    -fx-font-size: 17px;
+}
+
+.menuAcessoRapido {
+    -fx-background-color: #fff;
+}
+
+.lblNomeItensAcessoRapidos {
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+    -fx-alignment: top-center;
+}
+
+.lblTodosArquivos {
+    -fx-font-size: 22px;
+    -fx-alignment: top-center;
+}
+
+.scroll-pane {}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: #A5A3A6;
+    -fx-background-radius: 5em;
+}
+
+
+
+
+
+/*
+.context-menu {
+-fx-background-color: rgba(40, 43, 48, 1);
+-fx-background-insets: 0;
+-fx-padding: 5px;
+-fx-background-radius: 5px;
+-fx-border-radius: 5px;
+-fx-border-color: rgba(245, 245, 245, 0.1);
+-fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.6) , 6, 0.0 , 0 , 0);
+}
+/********** Menu Iten ***********//*
+.menu-item {
+-fx-background-radius: 5px;
+}
+.menu-item:hover, .menu-item:focused {
+-fx-background-color: derive(rgba(37, 40, 45, 1), -20%);
+}
+.menu-item > .graphic-container {
+-fx-padding: 0em 0.333em 0em 0em;
+}
+********* LABEL *********
+.menu-item >.label {
+-fx-background-color:transparent;
+-fx-padding: 0.2em 0.1em 0.2em 0.1em;
+-fx-text-fill: rgba(255, 255, 255, 0.6);
+-fx-effect: null;
+-fx-font-size: 13px;
+-fx-font-family: 'Open Sans';
+}
+.menu-item:focused > .label {
+-fx-text-fill: #fff;
+}
+/******* Critical Item *******//*
+.danger > .label {
+-fx-text-fill: #f04747;
+}
+.danger:focused > .label {
+-fx-text-fill: derive(#ff3434, 25%);
+}
+/***Menu***//*
+.menu {
+-fx-background-color: #000;
+}/*
