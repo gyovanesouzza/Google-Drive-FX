@@ -1,71 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
-
-
 .mainFxmlClass {
-}
-
-.paneTitulo{
-    -fx-background-color: #1F61CE;
-}
-
- .lblGoogleDrive{
-    -fx-font-size:20px;
- }   
-.txtPesquisa{
-    -fx-background-radius:20em;
-    -fx-border-radius: 20 20 20 20;
-}
-
-.menuBox{
-    -fx-background-color: #55A5E4;
-    -fx-background-radius: 0 35 10 0;
-}
-
-.button1{
-    -fx-background-color: #ffffff;
-    -fx-text-fill: #2262c6;
-    -fx-background-radius:20;
-}
-.button1:hover{
 
 }
 
-.button1:pressed{
-
+.paneTitulo {
+    -fx-background-color: #fff;
 }
 
-.button2{
-    -fx-background-color: #55A5E4;
-    -fx-text-fill:  #2262c6;
-    -fx-background-radius:20;
+.lblGoogleDrive {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2262C6;
 }
 
-.button2:hover{
-    -fx-background-color: #AAAAAA;
+.txtPesquisa {
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #D4CEE3;
     -fx-background-radius: 20;
-
 }
 
-.button2:pressed{
+.menuBox {
+    -fx-background-color: #2262C6;
+    -fx-background-radius: 0 60 0 0;
+    -fx-alignment: top-center;
+}
+
+.button1 {
+    -fx-background-color: #2262C6;
+    -fx-text-fill: #FFf;
+    -fx-alignment: baseline-left;
+}
+
+.button1:hover {
+    -fx-text-fill: #A7B3C4;
+}
+
+.button1:pressed {
+    -fx-text-fill: #80aff5;
+}
+
+.button1:active {
+    -fx-text-fill: #80aff5;
+}
+
+.button2 {
+    -fx-background-color: #fff;
+    -fx-background-radius: 20;
+    -fx-text-fill: #2262C6;
+}
+
+.button2:hover {
     -fx-background-color: #e4eefd;
     -fx-background-radius: 20;
-
 }
 
-.paneCentral1{
-
-
-}
-.lblMeuDrive{
-    -fx-font-size: 30px;
-    -fx-font-family: 'Amatic SC', cursive;
-
+.button2:pressed {
+    -fx-background-color: #e4eefd;
+    -fx-background-radius: 20;
 }
 
-.lblAcessoRapido{
-
+.button3 {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2262C6;
 }
 
-.menuAcessoRapido{
-    
+.button3:hover {
+    -fx-background-color: #e4eefd;
+}
+
+.button3:pressed {
+    -fx-background-color: #d3d9e2b0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -fx-box-border, linear-gradient(to bottom, derive(-fx-accent, 95%), derive(-fx-accent, 10%)), green;
+    /* this line is the background color of the bar */
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.416667em;
+    /* 5 */
+}
+
+.lblCapacidade {
+    -fx-text-fill: #FFf;
+}
+
+.hyperlink:hover {
+    -fx-underline: true;
 }

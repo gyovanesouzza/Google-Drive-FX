@@ -25,7 +25,7 @@ public class Main extends Application {
 
     private double xOffset = 0;
     private double yOffset = 0;
-    private int cont = 10000;
+    private int cont = 10;
 
     private final Stage splashStage = new Stage(StageStyle.TRANSPARENT);
 
@@ -81,7 +81,7 @@ public class Main extends Application {
     }
 
     private void chamarTelaLogin(final Stage primaryStage) throws Exception {
-        Scene s = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/TelaLoginAlternativa.fxml")));
+        Scene s = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/main.fxml")));
         s.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
 
