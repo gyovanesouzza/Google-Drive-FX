@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1052.0" stylesheets="@../css/TelaMeuDrive.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaMeuDriveController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1052.0" stylesheets="@../../css/MyDriveStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <BorderPane layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="626.0" prefWidth="1052.0">
             <top>
@@ -40,10 +40,10 @@
                                             <children>
                                                 <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/word.png" />
+                                                        <Image url="@../../icons/word.png" />
                                                     </image>
                                                 </ImageView>
-                                                <Label fx:id="lblNomeItenAcessoRapido1" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Contrato da JVF">
+                                                <Label fx:id="lblNomeItenAcessoRapido1" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../../css/HomeStyle.css" text="Contrato da JVF">
                                                     <tooltip>
                                                         <Tooltip text="Contrato da JVF" />
                                                     </tooltip>
@@ -54,10 +54,10 @@
                                             <children>
                                                 <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/excel.png" />
+                                                        <Image url="@../../icons/excel.png" />
                                                     </image>
                                                 </ImageView>
-                                                <Label fx:id="lblNomeItenAcessoRapido2" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="planilha do financeiro">
+                                                <Label fx:id="lblNomeItenAcessoRapido2" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../../css/HomeStyle.css" text="planilha do financeiro">
                                                     <tooltip>
                                                         <Tooltip text="planilha do financeiro" />
                                                     </tooltip>
@@ -68,10 +68,10 @@
                                             <children>
                                                 <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/power_point.png" />
+                                                        <Image url="@../../icons/power_point.png" />
                                                     </image>
                                                 </ImageView>
-                                                <Label fx:id="lblNomeItenAcessoRapido3" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Apresentação do Software JVF">
+                                                <Label fx:id="lblNomeItenAcessoRapido3" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../../css/HomeStyle.css" text="Apresentação do Software JVF">
                                                     <tooltip>
                                                         <Tooltip text="Apresentação do Software JVF" />
                                                     </tooltip>
@@ -82,10 +82,10 @@
                                             <children>
                                                 <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/video.png" />
+                                                        <Image url="@../../icons/video.png" />
                                                     </image>
                                                 </ImageView>
-                                                <Label fx:id="lblNomeItenAcessoRapido4" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="videoconferência com o Diretor Geral JVF">
+                                                <Label fx:id="lblNomeItenAcessoRapido4" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../../css/HomeStyle.css" text="videoconferência com o Diretor Geral JVF">
                                                     <tooltip>
                                                         <Tooltip text="videoconferência com o Diretor Geral JVF" />
                                                     </tooltip>
@@ -96,13 +96,13 @@
                                 </HBox>
                             </content>
                         </ScrollPane>
-                        <Button fx:id="btnMeuDrive" contentDisplay="RIGHT" layoutX="21.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="36.0" prefWidth="202.0" styleClass="btnMeuDrive" stylesheets="@../css/TelaMeuDrive.css" text="Meu Drive">
+                        <Button fx:id="btnMeuDrive" contentDisplay="RIGHT" layoutX="21.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="36.0" prefWidth="202.0" styleClass="btnMeuDrive" stylesheets="@../../css/MyDriveStyle.css" text="Meu Drive">
                             <contextMenu>
                                 <ContextMenu fx:id="cmMeuDrive">
                                     <items>
                                         <CustomMenuItem>
                                  <content>
-                                    <VBox stylesheets="@../css/TelaMeuDrive.css">
+                                    <VBox stylesheets="@../../css/MyDriveStyle.css">
                                        <children>
                                           <Button mnemonicParsing="false" prefWidth="180.0" style="-fx-text-fill: black;" styleClass="button1" text="Nova Pasta" />
                                           <Button mnemonicParsing="false" prefWidth="180.0" style="-fx-text-fill: black;" styleClass="button1" text="Fazer Upload de Arquivo" />
@@ -118,7 +118,7 @@
                             <graphic>
                                 <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../icons/sort_down.png" />
+                                        <Image url="@../../icons/sort_down.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -171,7 +171,7 @@
                                             <children>
                                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/word.png" />
+                                                        <Image url="@../../icons/word.png" />
                                                     </image>
                                                 </ImageView>
                                                 <Label prefHeight="25.0" prefWidth="330.0" text="Plano de Desenvolvimento da Versão Beta">
@@ -196,7 +196,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/download.png" />
+                                                                <Image url="@../../icons/download.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -206,7 +206,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/more.png" />
+                                                                <Image url="@../../icons/more.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -221,7 +221,7 @@
                                             <children>
                                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/power_point.png" />
+                                                        <Image url="@../../icons/power_point.png" />
                                                     </image>
                                                 </ImageView>
                                                 <Label prefHeight="25.0" prefWidth="330.0" text="Apresentação do Software JVF">
@@ -246,7 +246,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/download.png" />
+                                                                <Image url="@../../icons/download.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -256,7 +256,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/more.png" />
+                                                                <Image url="@../../icons/more.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -271,7 +271,7 @@
                                             <children>
                                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/excel.png" />
+                                                        <Image url="@../../icons/excel.png" />
                                                     </image>
                                                 </ImageView>
                                                 <Label prefHeight="25.0" prefWidth="330.0" text="planilha do financeiro">
@@ -296,7 +296,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/download.png" />
+                                                                <Image url="@../../icons/download.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -306,7 +306,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/more.png" />
+                                                                <Image url="@../../icons/more.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -321,7 +321,7 @@
                                             <children>
                                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/video.png" />
+                                                        <Image url="@../../icons/video.png" />
                                                     </image>
                                                 </ImageView>
                                                 <Label prefHeight="25.0" prefWidth="330.0" text="videoconferência com o Diretor Geral JVFvideoconferência com o Diretor Geral JVF">
@@ -346,7 +346,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/download.png" />
+                                                                <Image url="@../../icons/download.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -356,7 +356,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/more.png" />
+                                                                <Image url="@../../icons/more.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -371,7 +371,7 @@
                                             <children>
                                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../icons/word.png" />
+                                                        <Image url="@../../icons/word.png" />
                                                     </image>
                                                 </ImageView>
                                                 <Label prefHeight="25.0" prefWidth="330.0" text="Contrato da JVF">
@@ -396,7 +396,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/download.png" />
+                                                                <Image url="@../../icons/download.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>
@@ -406,7 +406,7 @@
                                                     <graphic>
                                                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                                             <image>
-                                                                <Image url="@../icons/more.png" />
+                                                                <Image url="@../../icons/more.png" />
                                                             </image>
                                                         </ImageView>
                                                     </graphic>

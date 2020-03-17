@@ -13,17 +13,17 @@ import java.util.ResourceBundle;
 
 public class SplashScreenController implements Initializable {
     @FXML
-    Circle circule1;
+    Circle circle1;
     @FXML
-    Circle circule2;
+    Circle circle2;
     @FXML
-    Circle circule3;
+    Circle circle3;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        new Bounce(circule1).setCycleDuration(4).setCycleCount(8).setDelay(Duration.valueOf("500ms")).play();
-        new Bounce(circule2).setCycleDuration(4).setCycleCount(8).setDelay(Duration.valueOf("1000ms")).play();
-        new Bounce(circule3).setCycleDuration(4).setCycleCount(8).setDelay(Duration.valueOf("1100ms")).play();
+        new Bounce(circle1).setCycleDuration(4).setCycleCount(8).setDelay(Duration.valueOf("500ms")).play();
+        new Bounce(circle2).setCycleDuration(4).setCycleCount(8).setDelay(Duration.valueOf("1000ms")).play();
+        new Bounce(circle3).setCycleDuration(4).setCycleCount(8).setDelay(Duration.valueOf("1100ms")).play();
     }
 }
 

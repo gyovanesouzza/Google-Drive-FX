@@ -9,17 +9,17 @@
    <children>
       <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="370.0">
          <children>
-            <Circle fx:id="circule1" radius="10.0" stroke="#2eb672" strokeType="INSIDE" strokeWidth="6.0" styleClass="Circle">
+            <Circle fx:id="circle1" radius="10.0" stroke="#2eb672" strokeType="INSIDE" strokeWidth="6.0" styleClass="Circle">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </HBox.margin> 
             </Circle>
-            <Circle fx:id="circule2" radius="10.0" stroke="#fed14b" strokeType="INSIDE" strokeWidth="6.0" styleClass="Circle">
+            <Circle fx:id="circle2" radius="10.0" stroke="#fed14b" strokeType="INSIDE" strokeWidth="6.0" styleClass="Circle">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </HBox.margin>
             </Circle>
-            <Circle fx:id="circule3" radius="10.0" stroke="#537abd" strokeType="INSIDE" strokeWidth="6.0" styleClass="Circle">
+            <Circle fx:id="circle3" radius="10.0" stroke="#537abd" strokeType="INSIDE" strokeWidth="6.0" styleClass="Circle">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </HBox.margin>

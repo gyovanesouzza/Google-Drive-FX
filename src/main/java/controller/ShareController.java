@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class TelaShareController implements Initializable {
+public class ShareController implements Initializable {
 
 
     @FXML

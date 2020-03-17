@@ -33,3 +33,5 @@ bin/
 out/
 auth/
 tokens/
+fxml/test/
+fxml/alfaScreen/
