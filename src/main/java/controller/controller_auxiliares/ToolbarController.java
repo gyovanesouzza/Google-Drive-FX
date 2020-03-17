@@ -10,21 +10,21 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AbaFechaeMinizarController implements Initializable {
+public class ToolbarController implements Initializable {
 
     @FXML
-    private JFXButton btnMinimizar;
+    private JFXButton btnMinimize;
 
     @FXML
-    private JFXButton btnFechar;
+    private JFXButton btnCloser;
 
     @FXML
-    void actionFechar(ActionEvent event) {
+    void actionCloser(ActionEvent event) {
         System.exit(0);
     }
 
     @FXML
-    void actionMinimizar(ActionEvent event) {
+    void actionMinimize(ActionEvent event) {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setIconified(true);

@@ -1,8 +1,8 @@
 package controller;
 
+import api.GoogleDrive;
+import beans.About;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -12,72 +12,63 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.ContextMenu;
-import javafx.scene.control.MenuItem;
-import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.security.GeneralSecurityException;
 import java.util.ResourceBundle;
 
-public class TelaLoginController implements Initializable {
-
+public class LoginController implements Initializable {
+    static About about;
     @FXML
-    private HBox acBarraTitulo;
-    @FXML
-    private JFXTextField txtEmail;
-
-    @FXML
-    private JFXPasswordField txtSenha;
-
-    @FXML
-    private JFXButton btnLogin;
-
+    private HBox toolBar;
     @FXML
     private JFXButton btnLoginGoogle;
-
     private double xOffset = 0;
     private double yOffset = 0;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            HBox barra = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/Fxml_Auxiliares/AbaFechaeMinimizar.fxml"));
-            acBarraTitulo.getChildren().setAll(barra);
+            toolBar.getChildren().setAll((HBox) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/ToolbarScreen.fxml")));
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText(e.getMessage());
+            alert.show();
         }
     }
 
     @FXML
-    private void mouseClickedLogin(MouseEvent evt) {
-        if (evt.getSource() == btnLogin) {
-            if (txtEmail.getText().equals("root") && txtSenha.getText().equals("root")) {
-                Node node = (Node) evt.getSource();
-                try {
-                    entrar(node);
-                } catch (IOException e) {
-                    System.out.println(e.getMessage());
-                }
-
-            } else {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Informação");
-                alert.setHeaderText(null);
-                alert.setContentText("Usuario Errado");
-                alert.show();
-            }
+    private void signIn(ActionEvent event) {
+        try {
+            about = GoogleDrive.aboutOfMe();
+            signIn((Node) event.getSource());
+        } catch (GeneralSecurityException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText(e.getMessage());
+            alert.show();
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Information");
+            alert.setHeaderText(null);
+            alert.setContentText("Please accept all permissions requested by DriveFX to access the software");
+            alert.show();
         }
-
     }
 
-    private void entrar(Node node) throws IOException {
+
+    private void signIn(Node node) throws IOException {
         final Stage stage = (Stage) node.getScene().getWindow();
         stage.close();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/HomeScreen.fxml"));
 
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override

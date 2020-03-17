@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="paneGrade" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="557.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaShareController">
+<Pane fx:id="paneGrade" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="557.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShareController">
    <children>
       <VBox prefHeight="557.0" prefWidth="1057.0">
          <children>
@@ -46,7 +46,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido1" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -60,7 +60,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -74,7 +74,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido12" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido12" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -88,7 +88,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido13" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido13" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -102,7 +102,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido14" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido14" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -116,7 +116,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido15" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido15" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -140,7 +140,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -154,7 +154,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -168,7 +168,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido121" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido121" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -182,7 +182,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido131" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido131" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -196,7 +196,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido141" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido141" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -210,98 +210,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido151" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                           </children>
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </HBox>
-                        <HBox prefHeight="153.0" prefWidth="1037.0" spacing="10.0" style="-fx-background-color: white;">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido112" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido122" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido132" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido142" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido152" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido151" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -322,7 +231,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -336,7 +245,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido113" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido112" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -350,7 +259,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido123" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido122" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -364,7 +273,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido133" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido132" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -378,7 +287,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido143" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido142" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -392,98 +301,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido153" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                           </children>
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </HBox>
-                        <HBox prefHeight="153.0" prefWidth="1037.0" spacing="10.0" style="-fx-background-color: white;">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1211" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1311" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1411" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
-                                       <tooltip>
-                                          <Tooltip text="Contrato da JVF" />
-                                       </tooltip>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
-                                 <children>
-                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/video.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1511" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido152" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -504,7 +322,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido11" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -518,7 +336,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1112" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido113" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -532,7 +350,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1212" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido123" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -546,7 +364,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1312" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido133" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -560,7 +378,7 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1412" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido143" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>
@@ -574,7 +392,189 @@
                                           <Image url="@../icons/video.png" />
                                        </image>
                                     </ImageView>
-                                    <Label fx:id="lblNomeItenAcessoRapido1512" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/main.css" text="Video 1 ">
+                                    <Label fx:id="lblNomeItenAcessoRapido153" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="153.0" prefWidth="1037.0" spacing="10.0" style="-fx-background-color: white;">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1211" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1311" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1411" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1511" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="153.0" prefWidth="1037.0" spacing="10.0" style="-fx-background-color: white;">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido111" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1112" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1212" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1312" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1412" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
+                                       <tooltip>
+                                          <Tooltip text="Contrato da JVF" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="138.0" prefWidth="162.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                                 <children>
+                                    <ImageView fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/video.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblNomeItenAcessoRapido1512" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="153.0" styleClass="lblNomeItensAcessoRapidos" stylesheets="@../css/HomeStyle.css" text="Video 1 ">
                                        <tooltip>
                                           <Tooltip text="Contrato da JVF" />
                                        </tooltip>

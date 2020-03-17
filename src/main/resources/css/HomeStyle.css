@@ -2,7 +2,7 @@
 
 }
 
-.paneTitulo {
+.paneTitle {
     -fx-background-color: #fff;
 }
 
@@ -11,7 +11,7 @@
     -fx-text-fill: #2262C6;
 }
 
-.txtPesquisa {
+.txtSearch {
     -fx-text-fill: black;
     -fx-prompt-text-fill: #D4CEE3;
     -fx-background-radius: 20;
@@ -34,10 +34,6 @@
 }
 
 .button1:pressed {
-    -fx-text-fill: #80aff5;
-}
-
-.button1:active {
     -fx-text-fill: #80aff5;
 }
 
@@ -72,16 +68,15 @@
 
 .progress-bar .bar {
     -fx-background-color: -fx-box-border, linear-gradient(to bottom, derive(-fx-accent, 95%), derive(-fx-accent, 10%)), green;
-    /* this line is the background color of the bar */
     -fx-background-insets: 0, 1, 2;
     -fx-padding: 0.416667em;
-    /* 5 */
 }
 
-.lblCapacidade {
+.lblStorage{
     -fx-text-fill: #FFf;
 }
 
 .hyperlink:hover {
     -fx-underline: true;
 }
+

@@ -15,10 +15,7 @@
     -fx-background-color: #FFFFFF;
 
 }
-.btnMinimizar:active{
-    -fx-background-color:#FFFFFF;
 
-}
 .btnfechar:hover{
     -fx-background-color:#E81123;
 }  
