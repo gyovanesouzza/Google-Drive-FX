@@ -79,4 +79,7 @@
 .hyperlink:hover {
     -fx-underline: true;
 }
+.circleImagemUser:hover{
+    -fx-cursor: hand ;
+}
 

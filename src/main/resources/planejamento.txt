@@ -1,0 +1,15 @@
+Tela de Login:
+              - Salva o Usuario para login rapido
+                1 - Mostrar a foto do usuario se ele aceitar o login rapido e nao desconectar a conta <<-
+
+Tela Meu Drive:
+                - Funções Novas:
+                                1 - Upload de Arquivos e Pasta;
+                                2 - Criação de Pastas;
+                                3 - Donwload de Arquvio pela Tabela
+                                4 - Botao MORE tabela
+                                5 - Pesquisa arquivo e pasta pelo Buscador
+
+
+
+

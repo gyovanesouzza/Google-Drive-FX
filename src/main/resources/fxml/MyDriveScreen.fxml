@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1052.0" stylesheets="@../css/MyDriveStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyDriveController">
+    <children>
+        <BorderPane layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="626.0" prefWidth="1052.0">
+            <top>
+                <Pane prefHeight="298.0" prefWidth="1052.0" style="-fx-background-color: F8F5F9;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="17.0" layoutY="111.0" prefHeight="30.0" prefWidth="207.0" styleClass="lblQAccess" text="Quick Access">
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Label>
+
+                        <HBox layoutX="5.0" layoutY="141.0" prefHeight="153.0" prefWidth="1043.0" spacing="10.0" styleClass="menuQAccess">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                            <children>
+                        <Button fx:id="btnQAccess1" contentDisplay="TOP" mnemonicParsing="false" prefHeight="138.0" prefWidth="162.0" styleClass="btnQAccess" text="Button">
+                           <graphic>
+                              <ImageView fx:id="imagemQAccess1" fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/word.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQAccess2" contentDisplay="TOP" mnemonicParsing="false" prefHeight="138.0" prefWidth="162.0" styleClass="btnQAccess" text="Button">
+                           <graphic>
+                              <ImageView fx:id="imagemQAccess2" fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/word.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQAccess3" contentDisplay="TOP" mnemonicParsing="false" prefHeight="138.0" prefWidth="162.0" styleClass="btnQAccess" text="Button">
+                           <graphic>
+                              <ImageView fx:id="imagemQAccess3" fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/word.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQAccess4" contentDisplay="TOP" mnemonicParsing="false" prefHeight="138.0" prefWidth="162.0" styleClass="btnQAccess" text="Button">
+                           <graphic>
+                              <ImageView fx:id="imagemQAccess4" fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/word.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQAccess5" contentDisplay="TOP" mnemonicParsing="false" prefHeight="138.0" prefWidth="162.0" styleClass="btnQAccess" text="Button">
+                           <graphic>
+                              <ImageView fx:id="imagemQAccess5" fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/word.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQAccess6" contentDisplay="TOP" mnemonicParsing="false" prefHeight="138.0" prefWidth="162.0" styleClass="btnQAccess" text="Button">
+                           <graphic>
+                              <ImageView fx:id="imagemQAccess6" fitHeight="92.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/word.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </HBox>
+
+                        <Button fx:id="btnMyDrive" contentDisplay="RIGHT" layoutX="21.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="36.0" prefWidth="202.0" styleClass="btnMyDrive" text="My Drive">
+                            <contextMenu>
+                                <ContextMenu fx:id="contextMenuMyDrive">
+                                    <items>
+                                        <CustomMenuItem>
+                                            <content>
+                                                <VBox stylesheets="@../css/MyDriveStyle.css">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" prefWidth="180.0" style="-fx-text-fill: black;" styleClass="button1" text="Nova Pasta" />
+                                                        <Button mnemonicParsing="false" prefWidth="180.0" style="-fx-text-fill: black;" styleClass="button1" text="Fazer Upload de Arquivo" />
+                                                        <Button mnemonicParsing="false" prefWidth="180.0" style="-fx-text-fill: black;" styleClass="button1" text="Fazer Upload de Pasta" />
+                                                    </children>
+                                                </VBox>
+                                            </content>
+                                        </CustomMenuItem>
+
+                                    </items>
+                                </ContextMenu>
+                            </contextMenu>
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/sort_down.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Separator layoutY="70.0" prefWidth="1050.0" />
+                    </children>
+                </Pane>
+            </top>
+            <center>
+                <Pane prefHeight="326.0" prefWidth="1052.0" style="-fx-background-color: F8F5F9;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="14.0" layoutY="46.0" prefHeight="28.0" prefWidth="175.0" styleClass="lblAllFiles" text="All Files" />
+                        <TableView fx:id="tblOfFile" layoutX="14.0" layoutY="80.0" prefHeight="234.0" prefWidth="1022.0">
+                            <columns>
+                                <TableColumn fx:id="colName" prefWidth="284.0" text="Name" />
+                                <TableColumn fx:id="colModified" prefWidth="196.0" text="Last Modified" />
+                                <TableColumn fx:id="colSize" prefWidth="168.0" text="size" />
+                                <TableColumn fx:id="colDownload" prefWidth="201.0" />
+                                <TableColumn fx:id="colMore" prefWidth="150.0" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </Pane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

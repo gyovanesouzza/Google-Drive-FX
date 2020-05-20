@@ -14,6 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
     <children>
@@ -57,13 +58,10 @@
                                         <Tooltip text="Suporte" />
                                     </tooltip>
                                 </Button>
+                        <Circle fx:id="circleImagemUser" fill="DODGERBLUE" radius="17.0" stroke="BLACK" strokeType="INSIDE" styleClass="circleImagemUser" />
                         <Button fx:id="btnUser" minWidth="51.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="51.0" styleClass="button3" text="Button">
-                           <graphic>
-                              <ImageView fx:id="imageUser" fitHeight="27.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-radius: 5;" styleClass="imageUser" />
-                           </graphic>
-                           <tooltip>
-                              <Tooltip text="Suporte" />
-                           </tooltip>
+                            <Circle fx:id="circlemagemUser" fill="DODGERBLUE" radius="17.0" stroke="BLACK" strokeType="INSIDE" styleClass="circleImagemUser" />
+
                         </Button>
                             </children>
                         </HBox>

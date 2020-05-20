@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.awt.*;
+import java.io.File;
 
 
 public class Main extends Application {
@@ -28,7 +29,7 @@ public class Main extends Application {
     @Override
     public void start(final Stage stage) throws Exception {
 
-        Parent splashPane = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/splashScreen.fxml"));
+        Parent splashPane = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/SplashScreen.fxml"));
         Scene scene = new Scene(splashPane);
         scene.setFill(null);
         splashStage.setScene(scene);
@@ -74,7 +75,16 @@ public class Main extends Application {
 
 
     private void callToLoginScreen(final Stage Stage) throws Exception {
-        Scene mainScreen = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/LoginScreen.fxml")));
+        Scene mainScreen = null;
+
+        if(new File(System.getenv("LOCALAPPDATA") + "\\googleDriveFX\\config\\login.cfg").exists()){
+            mainScreen = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/LoginVerificateScreen.fxml")));
+
+        }else{
+            mainScreen = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/LoginScreen.fxml")));
+
+        }
+
         mainScreen.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
 
