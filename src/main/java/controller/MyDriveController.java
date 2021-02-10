@@ -5,6 +5,7 @@ import beans.File;
 import beans.Table.FileTableBean;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -33,6 +34,8 @@ public class MyDriveController implements Initializable {
 
     @FXML
     ContextMenu contextMenuMyDrive;
+
+
 
     @FXML
     Button btnMyDrive;
@@ -88,6 +91,8 @@ public class MyDriveController implements Initializable {
         files = listFiles();
         FiilQAccess(files);
         fillTable();
+
+
 
     }
 
@@ -249,4 +254,7 @@ public class MyDriveController implements Initializable {
         tooltip.setAnchorLocation(PopupWindow.AnchorLocation.WINDOW_BOTTOM_LEFT);
         return tooltip;
     }
+
+
+
 }

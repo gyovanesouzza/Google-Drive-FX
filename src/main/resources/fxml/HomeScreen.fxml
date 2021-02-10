@@ -86,7 +86,7 @@
                     <children>
                         <Pane prefHeight="131.0" prefWidth="227.0">
                             <children>
-                                <Button layoutX="34.0" layoutY="32.0" prefHeight="40.0" prefWidth="160.0" styleClass="button2" text="Upload files">
+                                <Button fx:id="btnUpload" layoutX="34.0" layoutY="32.0" onAction="#uploadFiles" prefHeight="40.0" prefWidth="160.0" styleClass="button2" text="Upload files">
                                     <graphic>
                                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
@@ -183,7 +183,6 @@
         </BorderPane>
     </children>
     <stylesheets>
-        <URL value="@../css/HomeStyle.css" />
         <URL value="@../css/HomeStyle.css" />
     </stylesheets>
 </AnchorPane>

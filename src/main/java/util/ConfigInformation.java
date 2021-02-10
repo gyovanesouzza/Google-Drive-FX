@@ -10,7 +10,7 @@ public class ConfigInformation {
     private static final String PATH_FILE_CONFIG_LOGIN = LOCAL + "\\login.cfg";
 
 
-   public static User showConfigInformation() throws IOException, ClassNotFoundException {
+    public static User showConfigInformation() throws IOException, ClassNotFoundException {
         File config = new File(PATH_FILE_CONFIG_LOGIN);
         FileReader fis = new FileReader(config);
         BufferedReader brs = new BufferedReader(fis);
@@ -25,9 +25,25 @@ public class ConfigInformation {
 
     public static void configInformation(User user) throws IOException {
         File config = new File(PATH_FILE_CONFIG_LOGIN);
-        if(!config.exists()){
+        File pasta = new File(LOCAL);
+        if(!pasta.exists()){
+            pasta.mkdirs();
+        }
+        System.out.println(pasta.getPath() + "   -  "+ pasta.exists());
+        if (!config.exists()) {
+
             FileOutputStream fos = new FileOutputStream(config);
             fos.write(new Gson().toJson(user).getBytes());
             fos.close();
         }
-    }}
+    }
+    public static boolean DeleteConfig(){
+        File config = new File(PATH_FILE_CONFIG_LOGIN);
+        if (config.exists()) {
+            return config.delete();
+
+        }
+
+        return false;
+    }
+}

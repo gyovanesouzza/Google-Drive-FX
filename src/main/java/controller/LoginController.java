@@ -1,6 +1,7 @@
 package controller;
 
 import api.GoogleDrive;
+import app.Main;
 import beans.About;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
@@ -27,8 +28,7 @@ public class LoginController implements Initializable {
     private HBox toolBar;
     @FXML
     private JFXButton btnLoginGoogle;
-    private double xOffset = 0;
-    private double yOffset = 0;
+
 
 
     @Override
@@ -73,16 +73,16 @@ public class LoginController implements Initializable {
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                xOffset = event.getSceneX();
-                yOffset = event.getSceneY();
+                Main.xOffset = event.getSceneX();
+                Main.yOffset = event.getSceneY();
             }
         });
 
         root.setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                stage.setX(event.getScreenX() - xOffset);
-                stage.setY(event.getScreenY() - yOffset);
+                stage.setX(event.getScreenX() - Main.xOffset);
+                stage.setY(event.getScreenY() - Main.yOffset);
             }
         });
         Scene scene = new Scene(root);

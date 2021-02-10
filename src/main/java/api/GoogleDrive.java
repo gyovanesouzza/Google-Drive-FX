@@ -7,6 +7,7 @@ import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.http.FileContent;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.jackson2.JacksonFactory;
@@ -59,7 +60,6 @@ public class GoogleDrive {
         Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
                 .build();
-
         OutputStream outputStream = new FileOutputStream(path);
         driveService.files().get(fileId)
                 .executeMediaAndDownloadTo(outputStream);
@@ -67,6 +67,7 @@ public class GoogleDrive {
         outputStream.flush();
         outputStream.close();
     }
+
 
     public static DriveBean filesOfMyDrive() throws GeneralSecurityException, IOException {
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -118,4 +119,15 @@ public class GoogleDrive {
     }
 
 
+    public static com.google.api.services.drive.model.File uploadOfFiles(com.google.api.services.drive.model.File fileMetadata, FileContent mediaContent) throws GeneralSecurityException, IOException {
+
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+
+        Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+        com.google.api.services.drive.model.File file =
+                driveService.files().create(fileMetadata, mediaContent).setFields("id").execute();
+        return    file;
+    }
 }
