@@ -59,9 +59,9 @@
                                     </tooltip>
                                 </Button>
                         <Circle fx:id="circleImagemUser" fill="DODGERBLUE" radius="17.0" stroke="BLACK" strokeType="INSIDE" styleClass="circleImagemUser" />
+
                         <Button fx:id="btnUser" minWidth="51.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="51.0" styleClass="button3" text="Button">
                             <Circle fx:id="circlemagemUser" fill="DODGERBLUE" radius="17.0" stroke="BLACK" strokeType="INSIDE" styleClass="circleImagemUser" />
-
                         </Button>
                             </children>
                         </HBox>

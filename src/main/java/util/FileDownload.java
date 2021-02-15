@@ -2,6 +2,7 @@ package util;
 
 import api.GoogleDrive;
 import javafx.scene.control.Alert;
+import tray.notification.NotificationType;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,13 +23,11 @@ public class FileDownload {
         try {
             GoogleDrive.downloadOfFile(fileID, fileForDownload.getPath());
         } catch (GeneralSecurityException e) {
-            e.printStackTrace();
+            Notification.show("Download file",nameOfFile + " file download error", NotificationType.ERROR);
         }
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Information");
-        alert.setHeaderText(null);
-        alert.setContentText("Download : " + fileForDownload);
-        alert.show();
+        Notification.show("Download file",nameOfFile + " file successfully download", NotificationType.SUCCESS);
+
+
 
     }
 }

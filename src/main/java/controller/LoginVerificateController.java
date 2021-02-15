@@ -19,7 +19,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import tray.notification.NotificationType;
 import util.ConfigInformation;
+import util.Notification;
 
 import java.io.IOException;
 import java.net.URL;
@@ -63,20 +65,14 @@ public class LoginVerificateController implements Initializable {
     private void signIn(ActionEvent event) {
         try {
             about = GoogleDrive.aboutOfMe();
+            Notification.show("sign in","successfully logged in\n", NotificationType.SUCCESS);
             signIn((Node) event.getSource());
+
         } catch (GeneralSecurityException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText(e.getMessage());
-            alert.show();
+            Notification.show("Error",e.getMessage(), NotificationType.ERROR);
+
         } catch (IOException e) {
-            e.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Information");
-            alert.setHeaderText(null);
-            alert.setContentText("Please accept all permissions requested by DriveFX to access the software");
-            alert.show();
+            Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", NotificationType.INFORMATION);
         }
     }
 

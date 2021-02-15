@@ -16,6 +16,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import tray.notification.NotificationType;
+import util.Notification;
 
 import java.io.IOException;
 import java.net.URL;
@@ -49,18 +51,13 @@ public class LoginController implements Initializable {
         try {
             about = GoogleDrive.aboutOfMe();
             signIn((Node) event.getSource());
+            Notification.show("sign in","successfully logged in\n", NotificationType.SUCCESS);
+
         } catch (GeneralSecurityException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText(e.getMessage());
-            alert.show();
+            Notification.show("Error",e.getMessage(), NotificationType.ERROR);
+
         } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Information");
-            alert.setHeaderText(null);
-            alert.setContentText("Please accept all permissions requested by DriveFX to access the software");
-            alert.show();
+            Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", NotificationType.INFORMATION);
         }
     }
 
