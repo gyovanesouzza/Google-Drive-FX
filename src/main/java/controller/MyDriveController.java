@@ -112,7 +112,8 @@ public class MyDriveController implements Initializable {
                     if(alert.getResult() == ButtonType.YES) {
                         System.out.println("You delete on "+ tblOfFile.getSelectionModel().getSelectedItem().getFileName());
                         try {
-                            GoogleDrive.deleteFile(tblOfFile.getSelectionModel().getSelectedItem().getLink());
+                            String fileId =tblOfFile.getSelectionModel().getSelectedItem().getLink();
+                            GoogleDrive.trashFile(tblOfFile.getSelectionModel().getSelectedItem().getLink());
                             tblOfFile.getItems().removeAll();
                             fillTable();
                         } catch (GeneralSecurityException e) {

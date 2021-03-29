@@ -88,6 +88,7 @@ public class GoogleDrive {
 
             try {
                 files = gson.fromJson(result.toString(), DriveBean.class);
+                System.out.println(result.toString());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -131,16 +132,45 @@ public class GoogleDrive {
         return file;
     }
 
+    public static void trashFile(String fileId) throws GeneralSecurityException, IOException {
+
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+
+        Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+
+        com.google.api.services.drive.model.File file = new com.google.api.services.drive.model.File();
+        file.setTrashed(Boolean.TRUE);
+
+        driveService.files().update(fileId, file).execute();
+
+    }
+
+    public static com.google.api.services.drive.model.File untrashFile(String fileId) throws GeneralSecurityException, IOException {
+
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+
+        Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+
+        com.google.api.services.drive.model.File file = driveService.files().get(fileId).execute();
+        file.setTrashed(Boolean.FALSE);
+        Drive.Files.Update up = driveService.files().update(fileId, file);
+        file = driveService.files().get(up.getFileId()).execute();
+        return file;
+    }
 
     public static void deleteFile(String fileId) throws GeneralSecurityException, IOException {
 
-            final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
 
-            Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
-                    .setApplicationName(APPLICATION_NAME)
-                    .build();
+        Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
 
-           driveService.files().delete(fileId).execute();
+        driveService.files().delete(fileId).execute();
 
     }
 }
