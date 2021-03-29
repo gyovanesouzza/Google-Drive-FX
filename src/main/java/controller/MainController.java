@@ -1,22 +1,16 @@
 package controller;
 
 import api.GoogleDrive;
-import app.Main;
 import beans.About;
 import com.google.api.client.http.FileContent;
-import com.google.api.services.drive.Drive;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
@@ -24,15 +18,11 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.stage.Window;
-import javafx.util.Duration;
 import tray.notification.NotificationType;
-import tray.notification.TrayNotification;
 import util.ConfigInformation;
 import util.ConvertSize;
 import util.Notification;
 
-import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -46,7 +36,7 @@ public class MainController implements Initializable {
 
     //Pane's
     @FXML
-    AnchorPane AnchorCenter;
+   AnchorPane anchorCenter;
 
 
     //Button's of menu
@@ -136,21 +126,21 @@ public class MainController implements Initializable {
         try {
             if (evt.getSource() == btnMyDrive) {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/MyDriveScreen.fxml"));
-                AnchorCenter.getChildren().setAll(pane);
+                anchorCenter.getChildren().setAll(pane);
             } else if (evt.getSource() == btnComputer) {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/X.fxml"));
-                AnchorCenter.getChildren().setAll(pane);
+                anchorCenter.getChildren().setAll(pane);
             } else if (evt.getSource() == btnShare) {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/x.fxml"));
                 //AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/ShareScreen.fxml")); In development and translation
-                AnchorCenter.getChildren().setAll(pane);
+                anchorCenter.getChildren().setAll(pane);
 
             } else if (evt.getSource() == btnRecent) {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/X.fxml"));
-                AnchorCenter.getChildren().setAll(pane);
+                anchorCenter.getChildren().setAll(pane);
             } else if (evt.getSource() == btnTrash) {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/TrashScreen.fxml"));
-                AnchorCenter.getChildren().setAll(pane);
+                anchorCenter.getChildren().setAll(pane);
             }
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -178,7 +168,7 @@ public class MainController implements Initializable {
 
             }
             AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/MyDriveScreen.fxml"));
-            AnchorCenter.getChildren().setAll(pane);
+            anchorCenter.getChildren().setAll(pane);
         }
 
     }

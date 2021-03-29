@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1052.0" stylesheets="@../css/MyDriveStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyDriveController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1052.0" stylesheets="@../css/MyDriveStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyDriveController">
     <children>
         <BorderPane layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="626.0" prefWidth="1052.0">
             <top>
@@ -127,11 +127,9 @@
                         <Label layoutX="14.0" layoutY="46.0" prefHeight="28.0" prefWidth="175.0" styleClass="lblAllFiles" text="All Files" />
                         <TableView fx:id="tblOfFile" layoutX="14.0" layoutY="80.0" prefHeight="234.0" prefWidth="1022.0">
                             <columns>
-                                <TableColumn fx:id="colName" prefWidth="284.0" text="Name" />
-                                <TableColumn fx:id="colModified" prefWidth="196.0" text="Last Modified" />
-                                <TableColumn fx:id="colSize" prefWidth="168.0" text="size" />
-                                <TableColumn fx:id="colDownload" prefWidth="201.0" />
-                                <TableColumn fx:id="colMore" prefWidth="150.0" />
+                                <TableColumn fx:id="colName" prefWidth="713.0" text="Name" />
+                                <TableColumn fx:id="colModified" minWidth="7.0" prefWidth="148.0" text="Last Modified" />
+                                <TableColumn fx:id="colSize" prefWidth="157.0" text="size" />
                             </columns>
                         </TableView>
                     </children>

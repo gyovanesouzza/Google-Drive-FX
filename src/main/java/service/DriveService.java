@@ -8,6 +8,7 @@ import beans.Table.FileTableBean;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class DriveService {
             }
 
         } catch (Exception e) {
-
+            System.out.println(e.getMessage());
         }
 
 
@@ -49,7 +50,8 @@ public class DriveService {
 
         FileTableBean retorno = null;
         try {
-            retorno = new FileTableBean(file.getName(), file.getModifiedTime(), file.getSize());
+
+            retorno = new FileTableBean(file.getName(), file.getModifiedTime(), file.getSize(),file.getId());
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -1,12 +1,13 @@
 package controller;
 
+import api.GoogleDrive;
 import beans.DriveBean;
 import beans.File;
 import beans.Table.FileTableBean;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -14,6 +15,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.PopupWindow;
 import javafx.util.Callback;
 import service.DriveService;
@@ -21,11 +23,9 @@ import util.FileDownload;
 
 import java.io.IOException;
 import java.net.URL;
+import java.security.GeneralSecurityException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class MyDriveController implements Initializable {
 
@@ -34,7 +34,6 @@ public class MyDriveController implements Initializable {
 
     @FXML
     ContextMenu contextMenuMyDrive;
-
 
 
     @FXML
@@ -78,10 +77,6 @@ public class MyDriveController implements Initializable {
     private TableColumn<FileTableBean, Date> colModified;
     @FXML
     private TableColumn<FileTableBean, String> colSize;
-    @FXML
-    private TableColumn<FileTableBean, String> colDownload;
-    @FXML
-    private TableColumn<FileTableBean, String> colMore;
 
     private static final String SQUARE_BUBBLE =
             "M24 1h-24v16.981h4v5.019l7-5.019h13z";
@@ -92,6 +87,46 @@ public class MyDriveController implements Initializable {
         FiilQAccess(files);
         fillTable();
 
+
+
+        tblOfFile.setOnMouseClicked(event -> {
+
+            // Make sure the user clicked on a populated item
+            if (tblOfFile.getSelectionModel().getSelectedItem() != null && event.getClickCount() == 2) {
+                if (event.getButton() == MouseButton.PRIMARY) {
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Donwload " + tblOfFile.getSelectionModel().getSelectedItem().getFileName() + " ?", ButtonType.YES, ButtonType.NO, ButtonType.CANCEL);
+                alert.showAndWait();
+                if(alert.getResult() == ButtonType.YES){
+                    try {
+                        FileDownload.download(tblOfFile.getSelectionModel().getSelectedItem().getLink(), tblOfFile.getSelectionModel().getSelectedItem().getFileName());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println("You donwload on " + tblOfFile.getSelectionModel().getSelectedItem().getLink()+" -  2 "+ tblOfFile.getSelectionModel().getSelectedItem().getFileName());
+
+                }}
+                if (event.getButton() == MouseButton.SECONDARY) {
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Delete " + tblOfFile.getSelectionModel().getSelectedItem().getFileName() + " ?", ButtonType.YES, ButtonType.NO, ButtonType.CANCEL);
+                    alert.showAndWait();
+                    if(alert.getResult() == ButtonType.YES) {
+                        System.out.println("You delete on "+ tblOfFile.getSelectionModel().getSelectedItem().getFileName());
+                        try {
+                            GoogleDrive.deleteFile(tblOfFile.getSelectionModel().getSelectedItem().getLink());
+                            tblOfFile.getItems().removeAll();
+                            fillTable();
+                        } catch (GeneralSecurityException e) {
+                            System.out.println("An error occurred: " + e);
+                        } catch (IOException e) {
+                            System.out.println("An error occurred: " + e);
+                        }
+
+
+
+
+                }
+            }}
+        });
 
 
     }
@@ -207,7 +242,7 @@ public class MyDriveController implements Initializable {
             @Override
             public TableCell<FileTableBean, Date> call(TableColumn<FileTableBean, Date> column) {
                 TableCell<FileTableBean, Date> cell = new TableCell<FileTableBean, Date>() {
-                    private SimpleDateFormat format = new SimpleDateFormat("mm/dd/yyyy");
+                    private SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
                     private String data = null;
 
                     @Override
@@ -225,10 +260,10 @@ public class MyDriveController implements Initializable {
                 return cell;
             }
         });
-        colModified.setCellValueFactory(new PropertyValueFactory<FileTableBean, Date>("lastModified"));
-        colSize.setCellValueFactory(new PropertyValueFactory<FileTableBean, String>("size"));
-        colDownload.setCellValueFactory(new PropertyValueFactory<FileTableBean, String>("btnDowloand"));
 
+        colModified.setCellValueFactory(new PropertyValueFactory<FileTableBean, Date>("lastModified"));
+
+        colSize.setCellValueFactory(new PropertyValueFactory<FileTableBean, String>("size"));
         tblOfFile.setItems(listFilesTableBean());
     }
 

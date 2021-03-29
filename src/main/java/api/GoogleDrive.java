@@ -128,6 +128,19 @@ public class GoogleDrive {
                 .build();
         com.google.api.services.drive.model.File file =
                 driveService.files().create(fileMetadata, mediaContent).setFields("id").execute();
-        return    file;
+        return file;
+    }
+
+
+    public static void deleteFile(String fileId) throws GeneralSecurityException, IOException {
+
+            final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+
+            Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                    .setApplicationName(APPLICATION_NAME)
+                    .build();
+
+           driveService.files().delete(fileId).execute();
+
     }
 }

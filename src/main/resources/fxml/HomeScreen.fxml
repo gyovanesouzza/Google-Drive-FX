@@ -74,7 +74,7 @@
                 </Pane>
             </top>
             <center>
-                <AnchorPane fx:id="AnchorCenter" prefHeight="630.0" prefWidth="1052.0" style="-fx-background-color: #F8F8F8;" stylesheets="@../css/HomeStyle.css" BorderPane.alignment="CENTER">
+                <AnchorPane fx:id="anchorCenter" prefHeight="630.0" prefWidth="1052.0" style="-fx-background-color: #F8F8F8;" stylesheets="@../css/HomeStyle.css" BorderPane.alignment="CENTER">
                     <children>
                         <BorderPane prefHeight="630.0" prefWidth="1052.0" />
                   <fx:include source="MyDriveScreen.fxml" />
