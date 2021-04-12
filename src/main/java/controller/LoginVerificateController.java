@@ -3,6 +3,7 @@ package controller;
 import api.GoogleDrive;
 import beans.About;
 import beans.User;
+import com.github.plushaze.traynotification.notification.Notifications;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,7 +20,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import tray.notification.NotificationType;
 import util.ConfigInformation;
 import util.Notification;
 
@@ -65,14 +65,14 @@ public class LoginVerificateController implements Initializable {
     private void signIn(ActionEvent event) {
         try {
             about = GoogleDrive.aboutOfMe();
-            Notification.show("sign in","successfully logged in\n", NotificationType.SUCCESS);
+            Notification.show("sign in","successfully logged in\n", Notifications.SUCCESS);
             signIn((Node) event.getSource());
 
         } catch (GeneralSecurityException e) {
-            Notification.show("Error",e.getMessage(), NotificationType.ERROR);
+            Notification.show("Error",e.getMessage(), Notifications.ERROR);
 
         } catch (IOException e) {
-            Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", NotificationType.INFORMATION);
+            Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", Notifications.INFORMATION);
         }
     }
 

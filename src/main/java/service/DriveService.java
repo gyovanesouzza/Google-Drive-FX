@@ -45,7 +45,22 @@ public class DriveService {
         return retorno;
     }
 
+    public static List<FileTableBean> filesOfMyDriveForTableTrash() {
 
+        List<FileTableBean> retorno = new ArrayList<FileTableBean>();
+        try {
+            DriveBean driveBean = listFilesOfTrash();
+            for (int i = 0; i <= driveBean.getFiles().size(); i++) {
+                retorno.add(test(driveBean.getFiles().get(i)));
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+
+        return retorno;
+    }
     private static FileTableBean test(File file) {
 
         FileTableBean retorno = null;
@@ -59,4 +74,18 @@ public class DriveService {
         return retorno;
 
     }
+
+    public static DriveBean listFilesOfTrash() {
+
+        try {
+            return GoogleDrive.listFilesOfTrash();
+        } catch (GeneralSecurityException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 }

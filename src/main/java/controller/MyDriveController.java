@@ -29,7 +29,6 @@ import java.util.*;
 
 public class MyDriveController implements Initializable {
 
-    //DriveBeam
     public static DriveBean files = null;
 
     @FXML

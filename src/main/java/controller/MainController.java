@@ -2,6 +2,8 @@ package controller;
 
 import api.GoogleDrive;
 import beans.About;
+import beans.DriveBean;
+import com.github.plushaze.traynotification.notification.Notifications;
 import com.google.api.client.http.FileContent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -18,7 +20,7 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import tray.notification.NotificationType;
+import service.DriveService;
 import util.ConfigInformation;
 import util.ConvertSize;
 import util.Notification;
@@ -33,10 +35,9 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
     private static About about;
 
-
     //Pane's
     @FXML
-   AnchorPane anchorCenter;
+    AnchorPane anchorCenter;
 
 
     //Button's of menu
@@ -139,7 +140,14 @@ public class MainController implements Initializable {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/X.fxml"));
                 anchorCenter.getChildren().setAll(pane);
             } else if (evt.getSource() == btnTrash) {
-                AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/TrashScreen.fxml"));
+                AnchorPane pane;
+                if (DriveService.filesOfMyDriveForTableTrash().size() == 0) {
+                    pane = FXMLLoader.load(getClass().getResource("/fxml/TrashOffScreen.fxml"));
+
+                } else {
+                    pane = FXMLLoader.load(getClass().getResource("/fxml/TrashOnScreen.fxml"));
+
+                }
                 anchorCenter.getChildren().setAll(pane);
             }
         } catch (IOException e) {
@@ -164,7 +172,7 @@ public class MainController implements Initializable {
                 FileContent mediaContent = new FileContent("image/jpeg", f);
                 com.google.api.services.drive.model.File file = GoogleDrive.uploadOfFiles(fileMetadata, mediaContent);
 
-                Notification.show("Upload file",f.getName() + " file successfully uploaded\n", NotificationType.SUCCESS);
+                Notification.show("Upload file", f.getName() + " file successfully uploaded\n", Notifications.SUCCESS);
 
             }
             AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/MyDriveScreen.fxml"));

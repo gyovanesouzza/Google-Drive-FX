@@ -1,8 +1,8 @@
 package util;
 
 import api.GoogleDrive;
+import com.github.plushaze.traynotification.notification.Notifications;
 import javafx.scene.control.Alert;
-import tray.notification.NotificationType;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,9 +23,9 @@ public class FileDownload {
         try {
             GoogleDrive.downloadOfFile(fileID, fileForDownload.getPath());
         } catch (GeneralSecurityException e) {
-            Notification.show("Download file",nameOfFile + " file download error", NotificationType.ERROR);
+            Notification.show("Download file",nameOfFile + " file download error", Notifications.ERROR);
         }
-        Notification.show("Download file",nameOfFile + " file successfully download", NotificationType.SUCCESS);
+        Notification.show("Download file",nameOfFile + " file successfully download", Notifications.SUCCESS);
 
 
 

@@ -28,8 +28,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-
         Parent splashPane = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/SplashScreen.fxml"));
+
         Scene scene = new Scene(splashPane);
         scene.setFill(null);
         splashStage.setScene(scene);

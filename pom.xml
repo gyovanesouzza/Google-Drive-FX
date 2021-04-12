@@ -140,6 +140,16 @@
             <version>2.6</version>
         </dependency>
 
+
+        <!-- tray notification -->
+        <dependency>
+            <groupId>com.github.PlusHaze</groupId>
+            <artifactId>TrayNotification</artifactId>
+            <version>a8bfa597eb</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <repositories>
@@ -148,6 +158,12 @@
             <name>libs-snapshot</name>
             <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
         </repository>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
     </repositories>
 
 </project>

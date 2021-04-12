@@ -155,10 +155,13 @@ public class GoogleDrive {
                 .setApplicationName(APPLICATION_NAME)
                 .build();
 
-        com.google.api.services.drive.model.File file = driveService.files().get(fileId).execute();
+
+        com.google.api.services.drive.model.File file = new com.google.api.services.drive.model.File();
         file.setTrashed(Boolean.FALSE);
-        Drive.Files.Update up = driveService.files().update(fileId, file);
-        file = driveService.files().get(up.getFileId()).execute();
+
+        driveService.files().update(fileId, file).execute();
+
+
         return file;
     }
 
@@ -172,5 +175,35 @@ public class GoogleDrive {
 
         driveService.files().delete(fileId).execute();
 
+    }
+
+    public static DriveBean listFilesOfTrash() throws GeneralSecurityException, IOException {
+
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        String pageToken = null;
+        DriveBean files = new DriveBean();
+
+        Drive driveService = new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+
+        do {
+            FileList result = driveService.files().list()
+                    .setQ("'root' in parents and mimeType != 'application/vnd.google-apps.folder' and trashed = True")
+                    .setSpaces("drive")
+                    .setFields("nextPageToken,files")
+                    .setPageToken(pageToken)
+                    .execute();
+
+            try {
+                files = gson.fromJson(result.toString(), DriveBean.class);
+                System.out.println(result.toString());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            pageToken = result.getNextPageToken();
+        } while (pageToken != null);
+
+        return files;
     }
 }

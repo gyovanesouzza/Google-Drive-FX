@@ -3,6 +3,7 @@ package controller;
 import api.GoogleDrive;
 import app.Main;
 import beans.About;
+import com.github.plushaze.traynotification.notification.Notifications;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -16,7 +17,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import tray.notification.NotificationType;
 import util.Notification;
 
 import java.io.IOException;
@@ -36,6 +36,7 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
+
             toolBar.getChildren().setAll((HBox) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/ToolbarScreen.fxml")));
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -51,13 +52,13 @@ public class LoginController implements Initializable {
         try {
             about = GoogleDrive.aboutOfMe();
             signIn((Node) event.getSource());
-            Notification.show("sign in","successfully logged in\n", NotificationType.SUCCESS);
+            Notification.show("sign in","successfully logged in\n", Notifications.SUCCESS);
 
         } catch (GeneralSecurityException e) {
-            Notification.show("Error",e.getMessage(), NotificationType.ERROR);
+            Notification.show("Error",e.getMessage(), Notifications.ERROR);
 
         } catch (IOException e) {
-            Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", NotificationType.INFORMATION);
+            Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", Notifications.INFORMATION);
         }
     }
 
