@@ -12,12 +12,13 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.awt.*;
+import java.io.File;
 
 
 public class Main extends Application {
 
-    private double xOffset = 0;
-    private double yOffset = 0;
+    public static double xOffset = 0;
+    public static double yOffset = 0;
     private int cont = 10000;
     private final Stage splashStage = new Stage(StageStyle.TRANSPARENT);
 
@@ -26,9 +27,9 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(final Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception {
+        Parent splashPane = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/SplashScreen.fxml"));
 
-        Parent splashPane = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/fxml_Assistants/splashScreen.fxml"));
         Scene scene = new Scene(splashPane);
         scene.setFill(null);
         splashStage.setScene(scene);
@@ -71,10 +72,17 @@ public class Main extends Application {
     }
 
 
+    public void callToLoginScreen(final Stage Stage) throws Exception {
+        Scene mainScreen = null;
 
+        if (new File(System.getenv("LOCALAPPDATA") + "\\googleDriveFX\\config\\login.cfg").exists()) {
+            mainScreen = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/LoginVerificateScreen.fxml")));
 
-    private void callToLoginScreen(final Stage Stage) throws Exception {
-        Scene mainScreen = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/LoginScreen.fxml")));
+        } else {
+            mainScreen = new Scene((Parent) FXMLLoader.load(getClass().getClassLoader().getResource("fxml/LoginScreen.fxml")));
+
+        }
+
         mainScreen.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
 
