@@ -1,0 +1,25 @@
+.mainFxmlClass{
+    -fx-background-color: transparent;
+
+}
+
+.button{
+    -fx-background-color: #FFFFFF;
+}
+.btnfechar{
+    -fx-background-color: #FFFFFF;
+
+}
+.btnMinimizar{
+    
+    -fx-background-color: #FFFFFF;
+
+}
+
+.btnfechar:hover{
+    -fx-background-color:#E81123;
+}  
+
+.btnMinimizar:hover{
+    -fx-background-color:#E5E5E5;
+} 

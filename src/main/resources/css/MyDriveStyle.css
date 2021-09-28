@@ -1,0 +1,80 @@
+
+.btnMyDrive {
+    -fx-font-size: 20px;
+    -fx-background-color: #F8F5F9;
+}
+
+.btnMyDrive:hover {
+    -fx-text-fill: #A7B3C4;
+}
+
+.btnMyDrive:pressed {
+    -fx-text-fill: #80aff5;
+}
+
+.button1 {
+    -fx-background-color: #F8F5F9;
+}
+
+.button1:hover {
+    -fx-background-color: #e4eefd;
+}
+
+.button1:pressed {
+    -fx-background-color: #d3d9e2b0;
+}
+
+.lblQAccess {
+    -fx-font-size: 17px;
+}
+
+.menuQAccess{
+    -fx-background-color: #fff;
+}
+
+.btnQAccess{
+    -fx-text-fill: #2262C6;
+
+    -fx-background-color:  #F0F2F8;
+    -fx-background-radius:  5 30 5 5;
+}
+
+.btnQAccess:hover {
+    -fx-background-color: #e4eefd;
+}
+
+.btnQAccess:pressed {
+    -fx-background-color: #d3d9e2b0;
+}
+
+
+
+.lblAllFiles{
+    -fx-font-size: 22px;
+    -fx-alignment: top-center;
+}
+
+.scroll-pane {}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: #A5A3A6;
+    -fx-background-radius: 5em;
+}
+
+
+

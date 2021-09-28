@@ -1,0 +1,85 @@
+.mainFxmlClass {
+
+}
+
+.paneTitle {
+    -fx-background-color: #fff;
+}
+
+.lblGoogleDrive {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2262C6;
+}
+
+.txtSearch {
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #D4CEE3;
+    -fx-background-radius: 20;
+}
+
+.menuBox {
+    -fx-background-color: #2262C6;
+    -fx-background-radius: 0 60 0 0;
+    -fx-alignment: top-center;
+}
+
+.button1 {
+    -fx-background-color: #2262C6;
+    -fx-text-fill: #FFf;
+    -fx-alignment: baseline-left;
+}
+
+.button1:hover {
+    -fx-text-fill: #A7B3C4;
+}
+
+.button1:pressed {
+    -fx-text-fill: #80aff5;
+}
+
+.button2 {
+    -fx-background-color: #fff;
+    -fx-background-radius: 20;
+    -fx-text-fill: #2262C6;
+}
+
+.button2:hover {
+    -fx-background-color: #e4eefd;
+    -fx-background-radius: 20;
+}
+
+.button2:pressed {
+    -fx-background-color: #e4eefd;
+    -fx-background-radius: 20;
+}
+
+.button3 {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2262C6;
+}
+
+.button3:hover {
+    -fx-background-color: #e4eefd;
+}
+
+.button3:pressed {
+    -fx-background-color: #d3d9e2b0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -fx-box-border, linear-gradient(to bottom, derive(-fx-accent, 95%), derive(-fx-accent, 10%)), green;
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.416667em;
+}
+
+.lblStorage{
+    -fx-text-fill: #FFf;
+}
+
+.hyperlink:hover {
+    -fx-underline: true;
+}
+.circleImagemUser:hover{
+    -fx-cursor: hand ;
+}
+

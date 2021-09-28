@@ -1,0 +1,11 @@
+Tela Meu Drive:
+                - Funções Novas:
+                                1 - Upload de Arquivos e Pasta;
+                                2 - Criação de Pastas;
+                                3 - Donwload de Arquvio pela Tabela
+                                4 - Botao MORE tabela
+                                5 - Pesquisa arquivo e pasta pelo Buscador
+
+
+
+

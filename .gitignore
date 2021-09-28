@@ -32,3 +32,6 @@ bin/
 *.iml
 out/
 auth/
+tokens/
+fxml/test/
+fxml/alfaScreen/
