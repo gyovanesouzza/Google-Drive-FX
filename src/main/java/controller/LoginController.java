@@ -58,6 +58,7 @@ public class LoginController implements Initializable {
             Notification.show("Error",e.getMessage(), Notifications.ERROR);
 
         } catch (IOException e) {
+            System.out.println(e.getMessage());
             Notification.show("Information","Please accept all permissions requested by DriveFX to access the software", Notifications.INFORMATION);
         }
     }

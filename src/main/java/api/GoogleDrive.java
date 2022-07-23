@@ -193,6 +193,7 @@ public class GoogleDrive {
                     .setSpaces("drive")
                     .setFields("nextPageToken,files")
                     .setPageToken(pageToken)
+                    .setPageToken(pageToken)
                     .execute();
 
             try {

@@ -132,7 +132,7 @@ public class MainController implements Initializable {
                 AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/X.fxml"));
                 anchorCenter.getChildren().setAll(pane);
             } else if (evt.getSource() == btnShare) {
-                AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/x.fxml"));
+                AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/ShareScreen.fxml"));
                 //AnchorPane pane = FXMLLoader.load(getClass().getResource("/fxml/ShareScreen.fxml")); In development and translation
                 anchorCenter.getChildren().setAll(pane);
 
